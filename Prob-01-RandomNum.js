@@ -1,3 +1,11 @@
+/*
+Write a program in the following steps
+a. Generates 10 Random 3 Digit number.
+b. Store this random numbers into a array.
+c. Then find the 2nd largest and the 2nd smallest element without sorting the array.
+*/
+
+
 // Generate 10 random 3-digit numbers
 function generateRandomNumbers() {
     var numbers = [];
@@ -7,14 +15,9 @@ function generateRandomNumbers() {
     }
     return numbers;
   }
-  
-  // Store the generated numbers in an array
-  var numbersArray = generateRandomNumbers();
-  
-  // Print the generated numbers
+    var numbersArray = generateRandomNumbers();
   console.log("Generated Numbers: " + numbersArray);
   
-  // Find the 2nd largest and 2nd smallest elements without sorting
   var largest = secondLargest = Number.MIN_SAFE_INTEGER;
   var smallest = secondSmallest = Number.MAX_SAFE_INTEGER;
   
@@ -36,7 +39,6 @@ function generateRandomNumbers() {
     }
   }
   
-  // Print the second largest and second smallest numbers
   console.log("Second Largest: " + secondLargest);
   console.log("Second Smallest: " + secondSmallest);
   
