@@ -50,3 +50,5 @@ function generateBirthMonths(numOfIndividuals) {
     console.log();
   }
   
+
+
